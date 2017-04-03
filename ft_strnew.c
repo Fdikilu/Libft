@@ -14,10 +14,8 @@
 
 char	*ft_strnew(size_t size)
 {
-	int		i;
 	char	*str;
 
-	i = 0;
 	str = NULL;
 	if (!(str = (char *)malloc(sizeof(*str) * (size + 1))))
 		return (NULL);
