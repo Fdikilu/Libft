@@ -6,13 +6,13 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 23:51:42 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/04/01 16:08:11 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/04/05 17:37:08 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin_free(char const *s1, char const *s2)
 {
 	int		i;
 	int		j;
