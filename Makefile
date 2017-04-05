@@ -6,7 +6,7 @@
 #    By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 01:03:23 by fdikilu           #+#    #+#              #
-#    Updated: 2016/12/17 20:55:20 by fdikilu          ###   ########.fr        #
+#    Updated: 2017/04/05 17:20:29 by fdikilu          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,6 +57,7 @@ SRC =	ft_atoi.c \
 		ft_striter.c \
 		ft_striteri.c \
 		ft_strjoin.c \
+		ft_strjoin_free.c \
 		ft_strlcat.c \
 		ft_strlen.c \
 		ft_strmap.c \
