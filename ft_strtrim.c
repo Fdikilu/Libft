@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 23:52:04 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/12 17:48:18 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/14 01:50:38 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,22 @@
 
 char	*ft_strtrim(char const *s)
 {
-	int		i;
-	int		j;
-	int		k;
-	char	*str;
+	unsigned int	i;
+	unsigned int	j;
+	char			*str;
 
 	if (!s)
 		return (NULL);
+	if (ft_strlen((char *)s) == 0)
+		return (ft_strnew(0));
 	i = 0;
-	k = 0;
 	j = ft_strlen((char *)s) - 1;
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
-	while (j == 0 || s[j] == ' ' || s[j] == '\t' || s[j] == '\n')
+	if (ft_strlen((char *)s) == (int)i)
+		return (ft_strnew(0));
+	while (s[j] && (s[j] == ' ' || s[j] == '\t' || s[j] == '\n'))
 		j--;
-	if (!(str = malloc(sizeof(*str) * ((ft_strlen((char *)s) - j) + 1))))
-		return (NULL);
-	while (i <= j)
-	{
-		str[k] = s[i];
-		i++;
-		k++;
-	}
-	str[k] = '\0';
+	str = ft_strsub(s, i, (size_t)(j - i + 1));
 	return (str);
 }
