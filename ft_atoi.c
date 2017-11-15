@@ -6,11 +6,11 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/14 03:17:34 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/08/15 08:21:16 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/15 04:35:02 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(char *str)
+int		ft_atoi(const char *str)
 {
 	int		i;
 	int		result;

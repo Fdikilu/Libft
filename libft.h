@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 01:03:43 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/04/05 17:46:28 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/15 06:35:48 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,14 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-int					ft_atoi(char *str);
+int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 char				*ft_itoa(int n);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstclr(t_list **begin_list);
@@ -58,6 +59,7 @@ void				ft_putstr(char *str);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_strcat(char *dest, char *src);
 char				*ft_strchr(const char *s, int c);
+char				*ft_strcjoin(char const *s1, char const *s2, int c);
 void				ft_strclr(char *s);
 int					ft_strcmp(char *s1, char *s2);
 char				*ft_strcpy(char *dest, char *src);
@@ -69,7 +71,7 @@ void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strjoin_free(char const *s1, char const *s2);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
-int					ft_strlen(char *str);
+size_t				ft_strlen(char *str);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strncat(char *dest, char *src, int nb);

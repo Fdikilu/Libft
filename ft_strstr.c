@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/11 04:16:44 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/08/18 01:24:46 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/15 04:42:34 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strstr(char *str, char *to_find)
 		back_up_i = i;
 		while (str[i] == to_find[j])
 		{
-			if (j == (ft_strlen(to_find) - 1))
+			if ((size_t)j == (ft_strlen(to_find) - 1))
 				return (&str[i - j]);
 			j++;
 			i++;

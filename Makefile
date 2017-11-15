@@ -6,7 +6,7 @@
 #    By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 01:03:23 by fdikilu           #+#    #+#              #
-#    Updated: 2017/04/07 13:55:33 by fdikilu          ###   ########.fr        #
+#    Updated: 2017/11/15 06:36:35 by fdikilu          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC =	ft_atoi.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isprint.c \
+		ft_isspace.c \
 		ft_itoa.c \
 		ft_lstadd.c \
 		ft_lstclr.c \
@@ -49,6 +50,7 @@ SRC =	ft_atoi.c \
 		ft_putstr_fd.c \
 		ft_strcat.c \
 		ft_strchr.c \
+		ft_strcjoin.c \
 		ft_strclr.c \
 		ft_strcmp.c \
 		ft_strcpy.c \
@@ -95,5 +97,3 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: all clone fclean re $(NAME)
