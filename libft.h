@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 01:03:43 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/11/15 06:35:48 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/18 18:46:43 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
+int					ft_isxdigit(int c);
 char				*ft_itoa(int n);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstclr(t_list **begin_list);
