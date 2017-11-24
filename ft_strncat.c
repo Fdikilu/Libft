@@ -6,13 +6,13 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/14 01:21:18 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/02 17:49:51 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/24 01:49:02 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dest, char *src, int nb)
+char	*ft_strncat(char *dest, const char *src, size_t nb)
 {
 	int i;
 	int destlen;

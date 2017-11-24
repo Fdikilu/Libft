@@ -6,13 +6,13 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 15:05:31 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/02 18:18:16 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/22 03:39:03 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 == *s2 && *s1 && *s2)
 	{

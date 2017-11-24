@@ -6,13 +6,13 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 19:48:06 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/01 16:37:56 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/24 01:26:46 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
 	int cpt;
 

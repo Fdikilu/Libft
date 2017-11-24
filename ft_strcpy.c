@@ -6,11 +6,11 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 00:36:54 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/08 19:52:44 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/22 03:46:00 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int i;
 

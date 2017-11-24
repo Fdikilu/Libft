@@ -6,13 +6,13 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/16 14:43:39 by fdikilu           #+#    #+#             */
-/*   Updated: 2016/12/01 15:40:22 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/22 03:46:59 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	int		srclen;
