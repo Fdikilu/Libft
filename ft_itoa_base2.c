@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 09:50:23 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/11/25 20:56:50 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/25 20:56:26 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,20 +22,15 @@ static int	ft_nb_char(int n, int base)
 	return (len);
 }
 
-char		*ft_itoa_base(int n, int base)
+char		*ft_itoa_base2(int n, int base, char *strnb)
 {
 	int		len;
-	char	*str;
 
-	str = NULL;
 	len = ft_nb_char(n, base);
-	if (!(str = (char *)malloc(sizeof(*str) * (len + 1))))
-		return (NULL);
-	str[len + 1] = '\0';
 	while (len--)
 	{
-		str[len] = BASE[(n % base)];
+		strnb[len] = BASE[(n % base)];
 		n /= base;
 	}
-	return (str);
+	return (strnb);
 }

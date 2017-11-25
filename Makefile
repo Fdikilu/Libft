@@ -6,7 +6,7 @@
 #    By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 01:03:23 by fdikilu           #+#    #+#              #
-#    Updated: 2017/11/25 14:02:43 by fdikilu          ###   ########.fr        #
+#    Updated: 2017/11/25 21:09:31 by fdikilu          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC =	ft_atoi.c \
 		ft_isxdigit.c \
 		ft_itoa.c \
 		ft_itoa_base.c \
+		ft_itoa_base2.c \
 		ft_lstadd.c \
 		ft_lstclr.c \
 		ft_lstdel.c \
