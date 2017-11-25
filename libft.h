@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 01:03:43 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/11/24 01:57:23 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/25 14:00:06 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+
+# define BASE "0123456789abcdef"
 
 typedef struct		s_list
 {
@@ -35,6 +37,7 @@ int					ft_isprint(int c);
 int					ft_isspace(int c);
 int					ft_isxdigit(int c);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int n, int base);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstclr(t_list **begin_list);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
@@ -56,7 +59,7 @@ void				ft_putendl(const char *s);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int n, int fd);
-void				ft_putstr(char const *str);
+void				ft_putstr(char *str);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strchr(const char *s, int c);
@@ -75,9 +78,9 @@ size_t				ft_strlcat(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char				*ft_strncat(char *dest, const char *src, size_t nb);
-int					ft_strncmp(const char *s1, const char *s2, size_t n);
-char				*ft_strncpy(char *dest, const char *src, size_t n);
+char				*ft_strncat(char *dest, const char *src, int nb);
+int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
+char				*ft_strncpy(char *dest, const char *src, unsigned int n);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *str, const char *find, size_t len);
