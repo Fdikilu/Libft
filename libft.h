@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 01:03:43 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/11/25 21:10:27 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/12/01 05:59:43 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,11 +63,14 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *str);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_strcat(char *dest, const char *src);
+char				*ft_strccpy(char *dest, const char *src, int c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strcjoin(char const *s1, char const *s2, int c);
+size_t				ft_strclen(const char *str, int c);
 void				ft_strclr(char *s);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dest, const char *src);
+char				*ft_strcrcpy(char *dest, const char *src, int c);
 void				ft_strdel(char **as);
 char				*ft_strdup(const char *src);
 int					ft_strequ(char const *s1, char const *s2);
