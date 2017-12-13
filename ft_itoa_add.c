@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_itoa_add.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 09:50:23 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/12/12 00:33:57 by fdikilu          ###   ########.fr       */
+/*   Created: 2017/12/12 00:32:08 by fdikilu           #+#    #+#             */
+/*   Updated: 2017/12/13 05:21:53 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nb_char(int n, int base)
+static int	ft_nb_char(unsigned long n, int base)
 {
 	int		len;
 
@@ -22,7 +22,7 @@ static int	ft_nb_char(int n, int base)
 	return (len);
 }
 
-char		*ft_itoa_base(int n, int base)
+char		*ft_itoa_add(unsigned long n, int base)
 {
 	int		len;
 	char	*str;

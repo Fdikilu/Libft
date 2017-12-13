@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/07 14:02:35 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/12/01 07:55:00 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/12/01 01:00:03 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strjoin_free(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	if (!(str = (char *)malloc(sizeof(*str)
-		* (ft_strlen(s1) + ft_strlen(s2) + 1))))
+		* (ft_strlen(s1) + ft_strlen((char *)s2) + 1))))
 		return (NULL);
 	while (s1[i] && (str[i] = s1[i]))
 		i++;
