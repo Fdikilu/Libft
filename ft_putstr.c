@@ -6,7 +6,7 @@
 /*   By: fdikilu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 19:48:06 by fdikilu           #+#    #+#             */
-/*   Updated: 2017/12/20 07:42:02 by fdikilu          ###   ########.fr       */
+/*   Updated: 2017/11/24 01:26:46 by fdikilu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,15 @@
 
 void	ft_putstr(char const *str)
 {
-	int len;
+	int cpt;
 
-	if (!str)
-		return ;
-	len = ft_strlen(str);
-	write(1, str, len);
+	if (str)
+	{
+		cpt = 0;
+		while (str[cpt] != '\0')
+		{
+			ft_putchar(str[cpt]);
+			cpt = cpt + 1;
+		}
+	}
 }
